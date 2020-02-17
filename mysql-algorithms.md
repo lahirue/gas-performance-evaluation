@@ -37,8 +37,6 @@ function readMySQLJoin() {
     for (var col = 0; col < numCols; col++) {
       rowString += results.getString(col + 1) + '\t';
     }
-    Logger.log(rowString);
-    console.log(rowString);
   }
   results.close();
   stmt.close();

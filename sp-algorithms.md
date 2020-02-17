@@ -59,7 +59,6 @@ function joinSpreadSheet(){
   currentDoc.deleteSheet(tempSheet); 
   var end = new Date().getTime();
 
-  console.log(JSON.stringify(pullResult));
   var formatted = Utilities.formatString("%sms", end - start);
   return formatted;
 }
